@@ -7,7 +7,7 @@
     "test": "cd frontend && npm run test",
     "serve:dev": "docker-compose up",
     "serve:prod": "docker-compose -f docker-compose-prod.yml up -d --build",
-    "preinstall" : "mkdir frontend && git clone https://github.com/michaeldoye/create-react-app-custom.git frontend && cd frontend && npm i"
+    "preinstall" : "cd frontend && git clone $MODULE . && npm i"
   },
   "repository": {
     "type": "git",
